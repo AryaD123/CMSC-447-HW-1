@@ -1,0 +1,84 @@
+<!-- Arya Das - KU08570 -->
+<!-- aryad1@umbc.edu -->
+<!-- CMSC 447 Spring 2024 - HW 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #main-content {
+            padding: 20px;
+        }
+
+        subheading{
+            font-size: 20px;
+            color: darkblue;
+            font-style: italic;
+        }
+
+        h3 {
+         color: black;
+         font: normal;
+         font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" onclick="loadContent('home')">Home</a>
+    <a href="#" onclick="loadContent('skills')">Skills</a>
+    <a href="#" onclick="loadContent('education')">Education</a>
+    <a href="#" onclick="loadContent('experience')">Experience</a>
+    <a href="#" onclick="loadContent('contact')">My Contact Details</a>
+</div>
+
+<div id="main-content">
+    <h2>Hello, my name is Arya Das. </h2>
+    <p>Click on the links above to learn more about me.</p>
+</div>
+
+<script>
+    function loadContent(section) {
+        var content = document.getElementById("main-content");
+        
+        if(section === 'home') {
+            content.innerHTML = '<h2>About Me</h2><p>Hello, my name is Arya Das. I am a Computer Science major at the University of Maryland - Baltimore, and I plan to finish my B.S. by the Spring 2024 semester. </p>';
+        } else if(section === 'skills') {
+            content.innerHTML = '<h2>Skills</h2><p>Detail your skills here.</p>';
+        } else if(section === 'education') {
+            content.innerHTML = '<h2>Education</h2><p>Detail your education here.</p>';
+        } else if(section === 'experience') {
+            content.innerHTML = '<h2>Experience</h2><p>Here is a list of my interships and other extracurricular experience.</p><subheading>Maryland Space Grant<h3><ul>May-August 2021, 2022, 2023<li>Research Internship at the University of Maryland - Eastern Shore in the Robotics Lab</li><li>Wrote C++ and Python programs utilizing Proportional-Integral-Derivative gain scheduling to optimize soft robotic systems.</li><li>Wrote Lua programs for a 3-axis FarmBot robot to automate farming behaviors</li><li>Presented at MD Space Grant Summer Exchange Consortium in 2021 - 2023 and at 2023 MD Space Grant Mid-Atlantic Regional Space Grant Consortium at University of Delaware</li><li>Created research poster and published paper on "Summer Exchange Experience on AIRSPACES Project” with Dr. Nagchaudhuri (UMES), A. Reyna, J. Pandya, J. Cuppett</li></ul></h3></subheading><subheading>National Institute of Standards and Technology<h3><ul>June 2019 - August 2019<li>Worked at Robotics testing facility</li></ul></h3></subheading>';
+        } else if(section === 'contact') {
+            content.innerHTML = '<h2>Feel free to reach out to me:</h2><p><dl><dt>Linkedin:</dt><dd>www.linkedin.com/in/arya-das-a27860248</dd><dt>Email:</dt><dd>School Email: aryad1@umbc.edu</dd><dd>Personal Email: adasnxt@gmail.com</dd></dl></p>';
+        }
+    }
+</script>
+
+</body>
+</html>
+ 

@@ -1,0 +1,81 @@
+<!-- Old Draft Code -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      body {
+         background-color: aliceblue;
+      }
+
+      h1 {
+         color: blue;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 300%;
+      }
+
+      h2 {
+         color: black;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-size: 150%;
+         flex: auto;
+      }
+
+      h3 {
+         color: black;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-size: 100%;
+      }
+   </style>
+   <title> Arya Das's Personal Page </title>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hello, I'm Arya Das
+      </h1>
+      <div class="navbar">
+         <a href="#" onclick="loadContent('home')">Home</a>
+         <a href="#" onclick="loadContent('skills')">Skills</a>
+         <a href="#" onclick="loadContent('experience')">Experience</a>
+         <a href="#" onclick="loadContent('contact')">Contact</a>
+     </div>
+   </header>
+   <div class=”profile”>
+      <h1>About Me</h1>
+      <img src=”profile-picture.png”>
+      <p>My name is Arya Das, and I am an undergraduate student pursing my Bachelor's degree in Computer Science at the University of Maryland - Baltimore County. I am in my senior year planning to graduate in the Spring 2024 semester.</p>
+   </div>
+   <div class=”row">
+      <div class=”post-text-box”>
+         <section>
+            <h2>Education</h2>
+            <dl>
+               <dt>University of Maryland - Baltimore County (August 2020 - Spring 2024)</dt>
+               <dd>- black hot drink</dd>
+               <dt>Milk</dt>
+               <dd>- white cold drink</dd>
+             </dl>
+         </section>
+      </div>
+   </div>
+
+   <script>
+      function loadContent(section) {
+          var content = document.getElementById("main-content");
+          
+          if(section === 'home') {
+              content.innerHTML = '<h2>About Me</h2><p>This is the Home section where you introduce yourself.</p>';
+          } else if(section === 'skills') {
+              content.innerHTML = '<h2>Skills</h2><p>Detail your skills here.</p>';
+          } else if(section === 'experience') {
+              content.innerHTML = '<h2>Experience</h2><p>Summarize your professional experience and achievements here.</p>';
+          } else if(section === 'contact') {
+              content.innerHTML = '<h2>Contact</h2><p>Provide your contact information here.</p>';
+          }
+      }
+  </script>
+</body>
+</html>
