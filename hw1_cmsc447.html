@@ -75,9 +75,32 @@
             content.innerHTML = '<h2>About Me</h2><p>Hello, my name is Arya Das. I am a Computer Science major at the University of Maryland - Baltimore, and I plan to finish my B.S. by the Spring 2024 semester. </p>'+ 
             '<img src="arya_image.jpg" alt="My image" style="width:150px;height:200px;">';
         } else if (section === 'skills') {
-            content.innerHTML = '<h2>Skills</h2><p>Detail your skills here.</p>';
+            content.innerHTML = '<h2>Skills</h2><p>Here are some skills I have learned and used in my academic and extracurricular career.</p>' + 
+            '<subheading>Programming Languages<h3>' +
+                '<ul>',
+                '<li>Python</li>' +
+                '<li>C++</li>' +
+                '<li>JavaScript</li>' +
+                '<li>C</li>' +
+                '<li>Assembly</li>' +
+                '<li>MATLAB</li>' +
+                '</ul>' +
+                '</h3></subheading>';
         } else if (section === 'education') {
-            content.innerHTML = '<h2>Education</h2><p>Detail your education here.</p>';
+            content.innerHTML = '<h2>Education</h2><p>Below is my educational history.</p>' + 
+            '<subheading>University of Maryland - Baltimore County<h3>' +
+                '<ul>' +
+                'August 2020 - Present, expected graduation in Spring 2024' +
+                '<li>Bachelor of Science in Computer Science</li>' +
+                '<li>Relevant Coursework: Data Structures, Computer Systems, Algorithms, Software Engineering, Data Science, Statistics, Machine Learning, Natural Language Processing, Graphical Interface Programming, Databases, Computer Security and Operating Systems</li>' +
+                '</ul>' +
+                '</h3></subheading>' +
+                '<subheading>Delmar High School<h3>' +
+                '<ul>' +
+                'August 2016 - June 2020' +
+                '<li>Clubs: Business Professionals of America, Technology Student Association, ZERO Robotics by MIT and NASA.</li>' +
+                '</ul>' +
+                '</h3></subheading>';
         } else if (section === 'experience') {
             content.innerHTML = '<h2>Experience</h2><p>Here is a list of my interships and other extracurricular experience.</p>' +
                 '<subheading>Maryland Space Grant<h3>' +
